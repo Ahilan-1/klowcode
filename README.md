@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/screenshot.png" alt="KlowCode" width="720" />
-</p>
-
 <h1 align="center">KlowCode</h1>
 
 <p align="center">
