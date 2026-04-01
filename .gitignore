@@ -1,0 +1,11 @@
+node_modules/
+dist/
+cli
+cli-dev
+cli-dev.exe
+cli.exe
+openclaw/
+.env
+*.env.local
+.claude/
+
