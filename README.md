@@ -8,8 +8,8 @@
 
 <p align="center">
   <a href="#-quick-install"><img src="https://img.shields.io/badge/install-one--liner-blue?style=flat-square" alt="Install" /></a>
-  <a href="https://github.com/paoloanzn/klowcode/stargazers"><img src="https://img.shields.io/github/stars/paoloanzn/klowcode?style=flat-square&color=yellow" alt="Stars" /></a>
-  <a href="https://github.com/paoloanzn/klowcode/issues"><img src="https://img.shields.io/github/issues/paoloanzn/klowcode?style=flat-square" alt="Issues" /></a>
+  <a href="https://github.com/Ahilan-1/klowcode/stargazers"><img src="https://img.shields.io/github/stars/Ahilan-1/klowcode?style=flat-square&color=yellow" alt="Stars" /></a>
+  <a href="https://github.com/Ahilan-1/klowcode/issues"><img src="https://img.shields.io/github/issues/Ahilan-1/klowcode?style=flat-square" alt="Issues" /></a>
   <a href="FEATURES.md"><img src="https://img.shields.io/badge/features-54%20unlocked-orange?style=flat-square" alt="Feature Flags" /></a>
   <a href="#-ipfs-mirror"><img src="https://img.shields.io/badge/IPFS-mirrored-teal?style=flat-square" alt="IPFS" /></a>
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20WSL-lightgrey?style=flat-square" alt="Platform" />
@@ -40,11 +40,32 @@
 
 ## ⚡ Quick Install
 
+### Recommended — All Platforms (macOS / Linux / Windows)
+
+> Requires [Bun](https://bun.sh) >= 1.3.11. Install it first if you don't have it:
+> - **macOS / Linux**: `curl -fsSL https://bun.sh/install | bash`
+> - **Windows**: `powershell -c "irm bun.sh/install.ps1 | iex"`
+
 ```bash
-curl -fsSL https://raw.githubusercontent.com/paoloanzn/klowcode/main/install.sh | bash
+git clone https://github.com/Ahilan-1/klowcode.git
+cd klowcode
+bun install
+bun run build:dev:full
+./cli-dev        # macOS / Linux
+./cli-dev.exe   # Windows
 ```
 
-One command does everything: checks your system, installs [Bun](https://bun.sh) if needed, clones the repo, builds with all 54 experimental features enabled, and puts `klowcode` on your PATH.
+This builds with **all 54 experimental features unlocked**.
+
+### macOS / Linux — One-liner
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Ahilan-1/klowcode/main/install.sh | bash
+```
+
+Automatically installs Bun if needed, clones, builds, and puts `klowcode` on your PATH.
+
+---
 
 Then:
 
@@ -190,7 +211,7 @@ The official Claude Code release ships with 88 feature flags — nearly all disa
 curl -fsSL https://bun.sh/install | bash
 
 # Clone and build
-git clone https://github.com/paoloanzn/klowcode.git
+git clone https://github.com/Ahilan-1/klowcode.git
 cd klowcode
 bun install
 bun run build:dev:full   # recommended: all 54 features unlocked
